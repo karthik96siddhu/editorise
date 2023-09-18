@@ -1,0 +1,58 @@
+<div class="flex justify-content-center">
+    <div class="col-10">
+        <mat-card>
+            <mat-card-title>User Details</mat-card-title>
+        </mat-card>
+        <div *ngIf="userDetail" class="mt-2">
+            <table>
+                <tr>
+                    <td>Studio Name</td>
+                    <td>{{userDetail.studio_name}}</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>{{userDetail.email}}</td>
+                </tr>
+                <tr>
+                    <td>Contact Number</td>
+                    <td>{{userDetail.contact_number}}</td>
+                </tr>
+                <tr>
+                    <td>Couple Name</td>
+                    <td>{{userDetail.couple_name}}</td>
+                </tr>
+                <tr>
+                    <td>Wedding Date</td>
+                    <td>{{userDetail.wedding_date}}</td>
+                </tr>
+                <tr>
+                    <td>Source Link</td>
+                    <td>{{userDetail.source_link}}</td>
+                </tr>
+                <tr>
+                    <td>File Size</td>
+                    <td>{{userDetail.file_size}}</td>
+                </tr>
+                <tr>
+                    <td>Highlight</td>
+                    <td>{{userDetail.highlight}}</td>
+                </tr>
+                <tr>
+                    <td>Order Date</td>
+                    <td>{{userDetail.order_date}}</td>
+                </tr>
+                <tr>
+                    <td>Music Option</td>
+                    <td>{{userDetail.music_option}}</td>
+                </tr>
+                <tr>
+                    <td>Description</td>
+                    <td>{{userDetail.description}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+</div>
+
+<ngx-spinner type="ball-scale-multiple"></ngx-spinner>

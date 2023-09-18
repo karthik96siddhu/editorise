@@ -1,11 +1,6 @@
 @import '../node_modules/primeflex/primeflex.css';
 @import '../node_modules/primeflex/themes/saga-blue.css';
 
-body {
-    margin: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
 .surface-overlay {
     background-color: #171a2e !important;
 }
@@ -21,3 +16,6 @@ body {
 .text-danger {
     color: red;
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
