@@ -21,4 +21,8 @@ export class UserService {
   getUser(userID: string) {
     return this._http.get(this.apiBaseURL + 'user/' + userID)
   }
+
+  login(data:any) {
+    return this._http.post(this.apiBaseURL + 'login', data)
+  }
 }

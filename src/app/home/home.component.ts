@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit {
   public isSubmitted = false;
 
   today = new Date()
-  minDate = '2023-09-18'
+  minDate = ''
   constructor(private _fb: FormBuilder,
     private _userService: UserService,
     private _spinner: NgxSpinnerService) {
