@@ -16,6 +16,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatSortModule} from '@angular/material/sort';
+import {MatSelectModule} from '@angular/material/select';
 import { LoginComponent } from './login/login.component';
 import { AppInterceptor } from './app.interceptor';
 
@@ -40,7 +41,8 @@ import { AppInterceptor } from './app.interceptor';
     MatButtonModule,
     MatCardModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+    MatSelectModule,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [

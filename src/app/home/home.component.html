@@ -204,11 +204,12 @@
                             <path fill="#f2672c" d="M0 0h48v48H0z" mask="url(#ipTMovieBoard0)" />
                         </svg>
                     </span>
-                    <select name="highlight" id="highlight" formControlName="highlight"
-                        class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
-                        <option value="" disabled>Highlight films</option>
-                        <option [value]="high" *ngFor="let high of highlighList">{{high}}</option>
-                    </select>
+                    <mat-form-field appearance="fill" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+                        <mat-label>Highlight Films</mat-label>
+                        <mat-select formControlName="highlight" multiple>
+                          <mat-option *ngFor="let high of highlighList" [value]="high">{{high}}</mat-option>
+                        </mat-select>
+                      </mat-form-field>
                 </div>
                 <p class="flex field justify-content-end col-8 md:col-6 lg:col-4 m-0 font-10 text-danger"
                     *ngIf="userForm.controls['highlight'].invalid && (userForm.controls['highlight'].dirty || userForm.controls['highlight'].touched)">

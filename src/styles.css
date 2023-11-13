@@ -19,3 +19,23 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+app-home .mat-select-value {
+    color: #ffffff !important;
+}
+
+app-home mat-label {
+    color: #ffffff !important;
+}
+
+app-home .mat-form-field-infix {
+    border-top: none;
+}
+
+app-home .mat-form-field-wrapper {
+    padding-bottom: 0;
+}
+
+app-home .mat-form-field-appearance-fill .mat-form-field-underline::before, app-home .mat-form-field-appearance-fill .mat-form-field-ripple {
+    height: 0;
+}

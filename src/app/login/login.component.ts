@@ -57,7 +57,7 @@ export class LoginComponent implements OnInit {
         },
         error: (error:any) => {
           console.log(error)
-          if (error.status === 404) {
+          if (error.status === 404 || 401) {
             this.errorMessage = USER_CREDENTIAL_INCORRECT
           } else if (error.status === 500) {
             this.errorMessage = SOMETHING_WENT_WRONG

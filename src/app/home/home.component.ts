@@ -12,7 +12,7 @@ import { UserService } from '../services/user.service';
 export class HomeComponent implements OnInit {
 
   title = 'editorise';
-  public highlighList = ["Highlight (3-8min)", "Feature film (10-15min)", "Full length (30-60min)"]
+  public highlighList = ["Highlight (3-5min)", "Highlight (5-8min)", "Feature film (10-15min)", "Full length (30-60min)", "Teaser (60sec)"]
   public userForm!: FormGroup;
   public successMessage!: string;
   public errorMessage!: string;
@@ -89,7 +89,6 @@ export class HomeComponent implements OnInit {
 
   onSubmit() {
     this.isSubmitted = true;
-
     if (this.userForm.invalid) {
       for (const control of Object.keys(this.userForm.controls)) {
         this.userForm.controls[control].markAsTouched();
